@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: #00B04F;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        
+        .product {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 60px;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .product:last-child {
+            border-bottom: none;
+        }
+        
+        .product-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .product-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .product-description {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .product-details {
+            margin-bottom: 15px;
+        }
+        
+        .available-sizes {
+            font-weight: bold;
+            color: #00921d;
+            margin-bottom: 10px;
+        }
+        
+        .sizes {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .ingredients-title {
+            font-weight: bold;
+            color: #00ac06;
+            margin-bottom: 10px;
+        }
+        
+        .ingredients {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .special-note {
+            color: #fefefe;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+            .product-image {
+                flex: none;
+                margin-bottom: 20px;
+            }
+            .product-info {
+                text-align: left;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .page-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Sprite</h1>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Products</h1>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="images/sprite_tea.webp" alt="Sprite + Tea">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Sprite + Tea</h2>
+                <p class="product-description">
+                    It's time to hit up the squad, because the ultimate refreshing soft drink is finally here for a limited time. Sprite + Tea combines the classic lemon-lime soda you love with other natural tea flavors, to create a whole new class of refreshment.
+                </p>
+                <div class="product-details">
+                    <div class="available-sizes">Available Sizes:</div>
+                    <div class="sizes">12 fl oz, 12 fl oz 12 pk, 20 fl oz</div>
+                    <div class="ingredients-title">Ingredients</div>
+                    <div class="ingredients">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, LESS THAN 2% OF: NATURAL FLAVORS, CITRIC ACID, CARAMEL COLOR, SODIUM CITRATE, SODIUM BENZOATE AND POTASSIUM SORBATE (TO PROTECT TASTE).
+                    </div>
+                    <div class="special-note">NO CAFFEINE.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="images/sprite_zero.webp" alt="Sprite + Tea Zero Sugar">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Sprite + Tea Zero Sugar</h2>
+                <p class="product-description">
+                    It's time to hit up the squad, because the ultimate refreshing soft drink is finally here for a limited time. Sprite + Tea Zero Sugar combines the classic lemon-lime soda you love with other natural tea flavors, to create a whole new class of refreshment
+                    with zero sugar.
+                </p>
+                <div class="product-details">
+                    <div class="available-sizes">Available Sizes:</div>
+                    <div class="sizes">12 fl oz, 12 fl oz 12 pk</div>
+                    <div class="ingredients-title">Ingredients</div>
+                    <div class="ingredients">
+                        CARBONATED WATER, CITRIC ACID, POTASSIUM CITRATE, NATURAL FLAVORS, POTASSIUM BENZOATE (TO PROTECT TASTE), ASPARTAME, ACESULFAME POTASSIUM.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="images/sprite.webp" alt="Sprite Original">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Sprite</h2>
+                <p class="product-description">
+                    The OG, the flavor that started it all—classic, cool, crisp lemon-lime taste that's caffeine free with 100% natural flavors.
+                </p>
+                <div class="product-details">
+                    <div class="available-sizes">Available Sizes:</div>
+                    <div class="sizes">7.5 fl oz, 8 fl oz, 12 fl oz, 13.2 fl oz, 16.9 fl oz, 20 fl oz, 1 Liter, 1.25 Liters, 2 Liters, 3 Liters</div>
+                    <div class="ingredients-title">Ingredients</div>
+                    <div class="ingredients">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, NATURAL FLAVORS, SODIUM CITRATE, SODIUM BENZOATE (TO PROTECT TASTE).
+                    </div>
+                    <div class="special-note">100% NATURAL FLAVORS NO CAFFEINE</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="images/sprite_zero_sugar.webp" alt="Sprite Zero Sugar">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Sprite Zero Sugar</h2>
+                <p class="product-description">
+                    Who says you can't do more with less? The iconic great taste of Sprite with zero sugar.
+                </p>
+                <div class="product-details">
+                    <div class="available-sizes">Available Sizes:</div>
+                    <div class="sizes">7.5 fl oz, 12 fl oz, 16.9 fl oz, 20 fl oz, 2 Liters</div>
+                    <div class="ingredients-title">Ingredients</div>
+                    <div class="ingredients">
+                        CARBONATED WATER, CITRIC ACID, POTASSIUM CITRATE, NATURAL FLAVORS, POTASSIUM BENZOATE (TO PROTECT TASTE), ASPARTAME, ACESULFAME POTASSIUM.
+                    </div>
+                    <div class="ingredients">PHENYLKETONURICS: CONTAINS PHENYLALANINE</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="images/sprite_chill.webp" Sprite Chill ">
+            </div>
+            <div class="product-info ">
+                <h2 class="product-name ">Sprite Chill</h2>
+                <p class="product-description ">
+                    Sprite Chill, the coldest-est lemon-lime flavored soda in the game featuring a cherry lime taste and a unique cooling effect.
+                </p>
+                <div class="product-details ">
+                    <div class="available-sizes ">Available Sizes:</div>
+                    <div class="sizes ">12 fl oz, 20 fl oz, 12 fl oz - 12 pack</div>
+                    <div class="ingredients-title ">Ingredients</div>
+                    <div class="ingredients ">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, LESS THAN 2% OF: CITRIC ACID, NATURAL FLAVORS, SODIUM CITRATE, POTASSIUM SORBATE AND SODIUM BENZOATE (TO PROTECT TASTE), MODIFIED CORNSTARCH.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product ">
+            <div class="product-image ">
+                <img src="images/sprite_chill_nosugar.webp " alt="Sprite Chill Zero Sugar ">
+            </div>
+            <div class="product-info ">
+                <h2 class="product-name ">Sprite Chill Zero Sugar</h2>
+                <p class="product-description ">
+                    Zero sugar. All the chill. Sprite Chill Zero Sugar, the coldest-est lemon-lime flavored soda in the game featuring a cherry lime taste with zero sugar.
+                </p>
+                <div class="product-details ">
+                    <div class="available-sizes ">Available Sizes:</div>
+                    <div class="sizes ">12 fl oz, 12 fl oz - 12 pack</div>
+                    <div class="ingredients-title ">Ingredients</div>
+                    <div class="ingredients ">
+                        CARBONATED WATER, LESS THAN 2% OF: CITRIC ACID, NATURAL FLAVORS, POTASSIUM CITRATE, ASPARTAME, POTASSIUM SORBATE AND SODIUM BENZOATE (TO PROTECT TASTE), ACESULFAME POTASSIUM, MODIFIED CORNSTARCH.
+                    </div>
+                    <div class="ingredients ">PHENYLKETONURICS: CONTAINS PHENYLALANINE</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product ">
+            <div class="product-image ">
+                <img src="images/sprite_tropical.webp " alt="Sprite Tropical Mix ">
+            </div>
+            <div class="product-info ">
+                <h2 class="product-name ">Sprite Tropical Mix</h2>
+                <p class="product-description ">
+                    An ode to our past for all the Sprite Remix fans from the early 2000s. Rediscover the combination of the crisp, familiar Sprite lemon-lime taste with delicious strawberry and pineapple flavors.
+                </p>
+                <div class="product-details ">
+                    <div class="available-sizes ">Available Sizes:</div>
+                    <div class="sizes ">20 fl oz</div>
+                    <div class="ingredients-title ">Ingredients</div>
+                    <div class="ingredients ">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, NATURAL FLAVORS, SODIUM CITRATE, SODIUM BENZOATE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product ">
+            <div class="product-image ">
+                <img src="images/sprite_lymobdo.webp " alt="Sprite Lymonade ">
+            </div>
+            <div class="product-info ">
+                <h2 class="product-name ">Sprite Lymonade</h2>
+                <p class="product-description ">
+                    Just a splash makes all the difference. Sprite + Lemonade.
+                </p>
+                <div class="product-details ">
+                    <div class="available-sizes ">Available Sizes:</div>
+                    <div class="sizes ">12 fl oz, 20 fl oz</div>
+                    <div class="ingredients-title ">Ingredients</div>
+                    <div class="ingredients ">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CLARIFIED LEMON JUICE FROM CONCENTRATE, CITRIC ACID, NATURAL FLAVORS, SODIUM BENZOATE (TO PROTECT TASTE), SODIUM CITRATE, POTASSIUM SORBATE (TO PROTECT TASTE), MODIFIED FOOD STARCH, GLYCEROL ESTER OF ROSIN,
+                        YELLOW 5.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product ">
+            <div class="product-image ">
+                <img src="images/sprite_cherry.webp " alt="Sprite Cherry ">
+            </div>
+            <div class="product-info ">
+                <h2 class="product-name ">Sprite Cherry</h2>
+                <p class="product-description ">
+                    You were already drinking it with Coca‑Cola Freestyle, so we bottled it. Ice-cold refreshment with just the right amount of cherry.
+                </p>
+                <div class="product-details ">
+                    <div class="available-sizes ">Available Sizes:</div>
+                    <div class="sizes ">12 fl oz, 20 fl oz</div>
+                    <div class="ingredients-title ">Ingredients</div>
+                    <div class="ingredients ">
+                        CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, NATURAL FLAVORS, SODIUM CITRATE, SODIUM BENZOATE (TO PROTECT TASTE).
+                    </div>
+                    <div class="special-note ">NO CAFFEINE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
